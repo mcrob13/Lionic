@@ -6,8 +6,54 @@
 
 @media (max-width: 992px) {
   .header__nav {
-    display: none
+    display: none;
   }
+
+    /* Показываем бургер и скрываем обычное меню */
+
+    .burger {
+      display: block;
+      z-index: 1001;
+    }
+  
+    /* Стили для открытого состояния */
+    .header__nav.is-active {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: #fff; /* Фон меню */
+      z-index: 1000;
+      flex-direction: column;
+      gap: 20px; /* Фиксированный отступ между пунктами */
+      padding: 80px 20px 0;
+    }
+  
+    .nav__list.is-active {
+      flex-direction: column;
+      gap: 30px;
+    }
+  
+    /* Затемнение фона */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); /* Полупрозрачный черный */
+      z-index: 999;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s;
+    }
+  
+    .overlay.is-active {
+      opacity: 1;
+      visibility: visible;
+    }
 
   .burger {
     position: relative;
@@ -42,6 +88,24 @@
     bottom: 13px;
   }
 
+  .burger.is-active .burger__line:nth-child(1) {
+    transform: translateX(-50%) rotate(45deg);
+    top: 50%;
+  }
+  .burger.is-active .burger__line:nth-child(2) {
+    opacity: 0;
+  }
+  .burger.is-active .burger__line:nth-child(3) {
+    transform: translateX(-50%) rotate(-45deg);
+    bottom: auto;
+    top: 50%;
+  }
+  
+  .burger.is-active .nav__item {
+    display: block;
+    unicode-bidi: isolate;
+  }
+  
   .header__btn {
     margin-right: 7px;
   }

@@ -101,6 +101,17 @@ body {
   padding: 36px 0;
   border-bottom: 1px solid #C4C4C4;
   background-color: #fff;
+  position: fixed; /* Фиксируем шапку */
+  top: 0;          /* Прижимаем к верхнему краю */
+  left: 0;
+  width: 100%;     /* На всю ширину экрана */
+  z-index: 1000;   /* Чтобы шапка была поверх других элементов */
+  background-color: #fff; /* Цвет фона (как у вашего header) */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Небольшая тень для красоты */
+}
+
+.main {
+  padding-top: 100px; /* Высота вашего header + немного */
 }
 
 .header__container {
@@ -839,4 +850,16 @@ body {
 
 .burger {
   display: none;
+}
+
+.header.scroll-up {
+  transform: translateY(0);
+}
+
+.header.scroll-down {
+  transform: translateY(-100%);
+}
+
+.header {
+  transition: transform 0.3s ease;
 }
