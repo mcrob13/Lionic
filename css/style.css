@@ -762,6 +762,25 @@ body {
   color: #3172b9;
 }
 
+.join-us__descr a {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #3172b9;
+}
+
+.form__top-login {
+  justify-self: center;
+  flex-direction: column;
+}
+
+.form__top-login .form__input {
+  margin-bottom: 15px;
+}
+
+.join-us__register {
+  margin-top: 50px;
+}
+
 /* footer */
 
 .footer {
