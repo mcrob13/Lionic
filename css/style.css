@@ -882,3 +882,39 @@ body {
 .header {
   transition: transform 0.3s ease;
 }
+
+/* personal-cab */
+
+.personal-cabinet {
+  text-align: center;
+}
+
+.user-info {
+  max-width: 500px;
+  margin: 0 auto 40px;
+  padding: 30px;
+  border: 1px solid #e4e4e4;
+  border-radius: 20px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.info-value {
+  color: #787878;
+}
+
+#logout-btn {
+  margin-top: 20px;
+  min-width: 100px;
+}

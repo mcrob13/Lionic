@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1745512580752,
+    "name": "Роберт",
+    "email": "rob.oganisyan@inbox.ru",
+    "password": "9267042505",
+    "phone": "9267042505",
+    "country": "Spain",
+    "comment": "Хочу быстрее перейти на +",
+    "createdAt": "2025-04-24T16:36:20.752Z"
+  },
+  {
+    "id": 1745576057625,
+    "name": "Оганисян Роберт",
+    "email": "rob.oganisyan@yandex.ru",
+    "password": "Persik123.",
+    "phone": "9267042505",
+    "createdAt": "2025-04-25T10:14:17.625Z"
+  },
+  {
+    "id": 1745576327242,
+    "name": "Оганисян Альберт Арменович",
+    "email": "abo.oganisyan@yandex.ru",
+    "password": "Persik123.",
+    "phone": "9264053767",
+    "createdAt": "2025-04-25T10:18:47.242Z"
+  },
+  {
+    "id": 1745579403403,
+    "name": "Оганисян Марианна",
+    "email": "rob.oganisyan@mail.ru",
+    "password": "Persik123564",
+    "phone": "9264053767",
+    "createdAt": "2025-04-25T11:10:03.403Z"
+  }
+]
